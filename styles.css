@@ -572,6 +572,15 @@ span {
     width: 100%;
     padding: 40px 0;
     background-color: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerLogo{
+    position: absolute;
+    left: 20px;
 }
 
 .footer .social {
@@ -693,6 +702,9 @@ span {
         display: block;
     }
 
+    .footerLogo{
+        display: none;
+    }
     .navbar {
         position: absolute;
         top: 100%;
