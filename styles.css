@@ -641,6 +641,67 @@ span {
     color: white;
 }
 
+/* Estilos para el modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Fijarlo en pantalla completa */
+    z-index: 1; /* Colocarlo encima de todo el contenido */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Permitir scroll si es necesario */
+    background-color: rgba(0,0,0,0.4); /* Fondo semitransparente */
+    animation-name: fadeIn;
+    animation-duration: 0.5s; /* Duración de la animación */
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+.modal-content {
+    background-color: #fe3e3e;
+    margin: 20% auto; /* 15% desde arriba y centrado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Podrías ajustar este ancho */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    animation-name: slideIn;
+    animation-duration: 0.5s; /* Duración de la animación */
+}
+
+@keyframes slideIn {
+    from {transform: translateY(-50px); opacity: 0;} 
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.parrafo-modal {
+    text-align: center;
+    color: black;
+}
+
+.titulo-modal {
+    text-align: center;
+    color: black;
+}
+
+
 @media(max-width:1285px) {
     html{
         font-size: 55%;
@@ -759,5 +820,9 @@ span {
 
     .services-container {
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .service- {
+        
     }
 }
