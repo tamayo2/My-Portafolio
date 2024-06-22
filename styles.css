@@ -672,6 +672,14 @@ span {
     animation-duration: 0.5s; /* Duración de la animación */
 }
 
+@media(max-width:991px) {
+    .modal-content {
+        width: 90%;
+        margin-top: 100%;
+    }
+
+}
+
 @keyframes slideIn {
     from {transform: translateY(-50px); opacity: 0;} 
     to {transform: translateY(0); opacity: 1;}
@@ -823,7 +831,5 @@ span {
         grid-template-columns: repeat(1,1fr);
     }
 
-    .service- {
-        
-    }
+    
 }
